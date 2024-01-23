@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+.coin {
+    padding: 2rem;
+    background-color: rgb(236,236,236);
+    border-radius: 10px;
+    width: 200px;
+    height: fit-content;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.coin>img {
+    width: 30%;
+    height: 30%;
+}
+.coin > h1 {
+    text-transform: uppercase;
+}
+.loader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > div{
+    width: 100px;
+    height: 100px;
+    border-bottom: 4px solid rgb(65, 65, 65);
+    border-radius: 50%;
+
+    animation: rotation 1s infinite ease-in;
+}
+
+@keyframes rotation {
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+.loader > p{
+    margin-top: 15px;
+    font: 500 1.5rem sans-serif;
+}
